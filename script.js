@@ -19,7 +19,9 @@ let todoArr = Storage.getStorage();
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   let id = Math.random() * 1000000;
-  const todo = new TODO(id, input.value);
+  let todo;
+  if(input.value != ""){ 
+   todo = new TODO(id, input.value);
   todoArr = [...todoArr, todo];
   // console.log(todoArr); 
   UI.displayData();
@@ -27,6 +29,7 @@ form.addEventListener("submit", (e) => {
   UI.removeTodo();
   // add to local storage
   Storage.addToStorage(todoArr);
+  }
 });
 
 class TODO {

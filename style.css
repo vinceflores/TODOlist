@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Gugi&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Rubik:wght@300&display=swap');
+/* html {
+  height: 100%;
+  width: 100%;
+} */
+
+*{
+  font-family: 'Gugi', cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  background-color: deepskyblue;
+}
+.container{
+  width: 30rem;
+  margin: 2rem auto; 
+}
+
+.container .title{
+  text-align: center;
+  
+}
+
+.container .form{
+  background-color: #fff;
+  margin-top: 1rem; 
+  display: flex;
+  align-items: center;
+}
+
+.form input{
+  flex: 1; 
+  padding: 0.7rem;
+  border: none; 
+  background-color: transparent;
+  outline: none;
+}
+
+.form .btn{
+  padding: 0.7rem;
+  background-color: darkblue;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+.list{
+/*   width: 480px;  */
+}
+
+.list .todo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  background-color: #fff;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+}
+.todo{
+  cursor: pointer;
+}
